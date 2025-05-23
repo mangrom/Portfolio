@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("./Assets/Fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+}
+
+
+* {
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather";
+    
+}
+
+header {
+    background-color: #393E41;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    height: 50px;
+}
+
+nav a {
+    font-size: 16px;
+    background-color: #F6F7EB;
+    color: #2E382E;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+main {
+    background-color: #F6F7EB;
+    padding: 0 20px 0 20px;
+}
+
+.OmMegseksjon {
+    padding: 75px 0 100px 0;
+}
+
+.OmMegseksjon h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.OmMegseksjon article {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Skillsseksjon {
+    padding: 100px 0 100px 0;
+}
+
+.Skillsseksjon h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.Skillsseksjon ul {
+    padding-left: 20px;
+}
+
+.Prosjekterseksjon {
+    padding: 100px 0 100px 0;
+}
+
+.Prosjekterseksjon h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.PågåendeProsjekterseksjon {
+    padding: 100px 0 100px 0;
+}
+
+.PågåendeProsjekterseksjon h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #393E41;
+    color: white;
+}
+
+.TaKontaktseksjon {
+    padding: 75px 0 100px 0;
+}
+
+.TaKontaktseksjon h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.TaKontaktseksjon p {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
