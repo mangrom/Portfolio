@@ -1,8 +1,24 @@
+
 @font-face {
     font-family: "Merriweather";
     src: url("./Assets/Fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
 }
 
+:root {
+    --primary-color: #F6F7EB;
+    --secondary-color: #393E41;
+    --text-color: black;
+    --footer-color: white;
+    --button-hover-background: white;
+}
+
+.darkMode {
+    --primary-color: #393E41;
+    --secondary-color: #F6F7EB;
+    --text-color: white;
+    --footer-color: black;
+    --button-hover-background: black;
+}
 
 * {
     display: flexbox;
@@ -14,39 +30,68 @@
 }
 
 header {
-    background-color: #393E41;
+    background-color: var(--secondary-color);
     height: 75px;
     top: 0;
     position: sticky;
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 10px;
     height: 50px;
+    gap: 20px;
 }
 
 nav a {
     font-size: 16px;
-    background-color: #F6F7EB;
-    color: #2E382E;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
     padding: 12px;
     border: 2px solid black;
     border-radius: 20px;
-    display: block;
+    display: flex;
     text-decoration: none;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: var(--button-hover-background);
+}
+
+#theme {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#theme:hover {
+    background-color: var(--button-hover-background);
 }
 
 main {
-    background-color: #F6F7EB;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 0 20px 0 20px;
 }
 
@@ -98,8 +143,8 @@ main {
 }
 
 footer {
-    background-color: #393E41;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--footer-color);
 }
 
 .TaKontaktseksjon {
